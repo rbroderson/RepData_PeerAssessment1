@@ -10,7 +10,7 @@
 
 <meta name="author" content="Ross Broderson" />
 
-<meta name="date" content="2015-08-15" />
+<meta name="date" content="2015-08-16" />
 
 <title>Peer Assignment 1: Analyzing Activity Data</title>
 
@@ -54,7 +54,7 @@ code > span.er { color: #ff0000; font-weight: bold; }
 <div id="header">
 <h1 class="title">Peer Assignment 1: Analyzing Activity Data</h1>
 <h4 class="author"><em>Ross Broderson</em></h4>
-<h4 class="date"><em>2015-08-15</em></h4>
+<h4 class="date"><em>2015-08-16</em></h4>
 </div>
 
 
@@ -66,12 +66,11 @@ code > span.er { color: #ff0000; font-weight: bold; }
 <li><p>date: The date on which the measurement was taken in YYYY-MM-DD format</p></li>
 <li><p>interval: Identifier for the 5-minute interval in which measurement was taken</p></li>
 </ul>
+<p>Material and project instructions were provided by Roger D. Peng and team who are instructors for Reproducible Research.</p>
 </div>
 <div id="loading-and-preprocessing-the-data" class="section level2">
 <h2>Loading and preprocessing the data</h2>
-<pre class="sourceCode r"><code class="sourceCode r"><span class="kw">setwd</span>(<span class="st">&quot;~/R_WF&quot;</span>)
-
-<span class="kw">download.file</span>(<span class="st">&quot;http://d396qusza40orc.cloudfront.net/repdata%2Fdata%2Factivity.zip&quot;</span>, <span class="st">&quot;tempactivity.zip&quot;</span>
+<pre class="sourceCode r"><code class="sourceCode r"><span class="kw">download.file</span>(<span class="st">&quot;http://d396qusza40orc.cloudfront.net/repdata%2Fdata%2Factivity.zip&quot;</span>, <span class="st">&quot;tempactivity.zip&quot;</span>
               ,<span class="dt">mode=</span><span class="st">&quot;wb&quot;</span>)
 <span class="kw">unzip</span>(<span class="st">&quot;tempactivity.zip&quot;</span>)
 activity &lt;-<span class="st"> </span><span class="kw">read.csv</span>(<span class="st">&quot;activity.csv&quot;</span>)

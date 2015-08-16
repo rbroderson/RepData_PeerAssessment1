@@ -16,13 +16,14 @@ This project analyzes a persons activity that was captured using a pedometer.  T
 * date: The date on which the measurement was taken in YYYY-MM-DD format
 
 * interval: Identifier for the 5-minute interval in which measurement was taken
+
+Material and project instructions were provided by Roger D. Peng and team who are instructors for Reproducible Research.
 ```{r set-options, echo=TRUE, cache=FALSE}
 
 ```
 
 ## Loading and preprocessing the data
 ```{r, fig.width=10}
-setwd("~/R_WF")
 
 download.file("http://d396qusza40orc.cloudfront.net/repdata%2Fdata%2Factivity.zip", "tempactivity.zip"
               ,mode="wb")
